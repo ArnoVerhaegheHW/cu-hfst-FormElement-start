@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="images/html5_16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/html5_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/html5_96.png" sizes="96x96">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Werken met Forms</title>
+</head>
+
+<body>
+    <form>
+        <label for="field1">Input: </label>
+        <input id="field1" type="text">
+        <br><br>
+        <input type="radio" name="groepA" value="A" checked="checked" />
+        radioknop met waarde A (standaard actief) <br />
+        <input type="radio" name="groepA" value="B" />
+        radioknop met waarde B <br />
+        <input type="radio" name="groepA" value="C" />
+        radioknop met waarde C <br />
+        <br>
+        <label for="check1">Input: </label>
+        <input id="check1" type="checkbox">
+        <label for="check2">Input: </label>
+        <input id="check2" type="checkbox">
+        <label for="check3">Input: </label>
+        <input id="check3" type="checkbox">
+        <br>
+        <label for="field4">Input: </label>
+        <input id="field4" type="password">
+        <br>
+        <label for="field5">Input: </label>
+        <input id="field5" type="file">
+        <br>
+        <hr>
+        <br><br>
+        <label for="field6">Email Adress: </label>
+        <input id="field6" type="email">
+        <br><br>
+        <label for="field7">Telefoon nummer: </label>
+        <input id="field7" type="tel">
+        <br><br>
+        <label for="field8">Zoeken: </label>
+        <input id="field8" type="search">
+        <br><br>
+        <label for="field9">Homepage: </label>
+        <input id="field9" type="url">
+        <br><br>
+        <label for="score">Je Score: </label><br />
+        <input id="score" type="number" placeholder="Geef een veelvoud van 2 in. (Max 10)" step="2" min="0" max="10">
+        <br><br>
+        <label for="tevredenheid">Hoe tevreden ben je?: </label><br />
+        <input id="tevredenheid" type="range" list="mijnSchaal">
+        <datalist id="mijnSchaal">
+            <option value="0">
+            <option value="10">
+            <option value="20">
+            <option value="30">
+            <option value="40">
+            <option value="50">
+            <option value="60">
+            <option value="70">
+            <option value="80">
+            <option value="90">
+            <option value="100">
+        </datalist>
+        <br><br>
+        <label for="favorieteKleur">Favoriete Kleur: </label><br />
+        <input id="favorieteKleur" type="color" value="#00ff00">
+        <br><br>
+        <label for="geboorteDatum">Geboortedatum: </label><br />
+        <input id="geboorteDatum" type="date">
+        <br><br>
+        <label for="dateTime">Local Date and Time: </label><br />
+        <input id="dateTime" type="datetime-local">
+        <br><br>
+        <label for="afspraak">Uur: </label>
+        <br />
+        <input id="afspraak" type="time">
+        <br><br />
+        <label for="gekozenMaand">Maand: </label> <br />
+        <input id="gekozenMaand" type="month">
+        <br><br />
+        <label for="week">Week: </label><br />
+        <input id="week" type="week">
+        <br /><br />
+        <input type="submit">
+    </form>
+</body>
+
+</html>
